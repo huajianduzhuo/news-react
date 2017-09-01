@@ -13,9 +13,6 @@ class NewsContainer extends Component {
                     <li>
                         <a href="/#/newsdetail/2">新闻2</a>
                     </li>
-                    <li>
-                        <a href="/#/usercenter">用户中心</a>
-                    </li>
                 </ul>
             </div>
         );
