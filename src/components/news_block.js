@@ -24,6 +24,7 @@ class NewsBlock extends Component {
     }
     render() {
         let {newsArr} = this.state;
+        let {type} = this.props;
         let newsList = !newsArr 
             ? (
                 <h3>暂无新闻</h3>
@@ -31,7 +32,7 @@ class NewsBlock extends Component {
             : (
                 newsArr.map((news, index) => (
                     <li key={index}>
-                        <Link to={`/newsdetail/${news.uniquekey}`}>{news.title}</Link>
+                        <Link to={`/newsdetail/${news.uniquekey}/${type}`}>{news.title}</Link>
                     </li>
                 ))
             );
