@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewsHeader from './news_header';
 import NewsFooter from './news_footer';
-import '../componentCSSs/app.css';
+import '../componentCSSs/pc.css';
 /* 
     根路由组件--App
 */

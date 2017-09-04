@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import {Row, Col} from 'antd';
 
 class NewsFooter extends Component {
     state = {  }
     render() {
         return (
-            <div>
-                新闻底部
-            </div>
+            <footer>
+                <Row>
+                    <Col span={1}></Col>
+                    <Col span={22} style={{textAlign: 'center', padding: '20px'}}>
+                        2017 ReactNews. All Rights Reserved.
+                    </Col>
+                    <Col span={1}></Col>
+                </Row>
+            </footer>
         );
     }
 }
