@@ -100,7 +100,7 @@ class NewsHeader extends Component {
         const { getFieldDecorator } = this.props.form;
         // 根据 username 的状态，判断是否登录，并为显示内容赋值
         const showItem = username ? (
-            <Item key="login" className='right'>
+            <Item key="login" className='register'>
                 <Button type="primary">{username}</Button>&nbsp;&nbsp;
                 <Link to="/usercenter">
                     <Button type="dashed">个人中心</Button>
@@ -108,7 +108,7 @@ class NewsHeader extends Component {
                 <Button onClick={this.logout}>退出</Button>
             </Item>
         ) : (
-            <Item key="logout" className='right'>
+            <Item key="logout" className='register'>
                 <Icon type="appstore"/>登录/注册
             </Item>
         );

@@ -64,11 +64,11 @@
     text-overflow: ellipsis;
   }
   /*轮播图*/
-  .carousel {
+  .leftContainer .carousel {
     width: 400px;
     float: left;
   }
-  .carousel img {
+  .leftContainer .carousel img {
     width: 400px;
     height: 260px;
   }

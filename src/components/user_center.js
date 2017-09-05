@@ -52,7 +52,7 @@ class UserCenter extends Component {
 
     render() {
         let {userCollectionList, userCommentList} = this.state;
-        let collectionShow = userCollectionList.length == 0 
+        let collectionShow = userCollectionList.length === 0 
             ? (
                 <p>您还没有收藏任何的新闻，快去收藏一些新闻吧。</p>
             ) 
@@ -63,7 +63,7 @@ class UserCenter extends Component {
                     </Card>
                 ))
             );
-        let commentShow = userCommentList.length == 0 
+        let commentShow = userCommentList.length === 0 
             ? (
                 <p>您还没有发表过任何评论。</p>
             ) 
